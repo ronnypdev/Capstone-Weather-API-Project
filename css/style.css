@@ -74,3 +74,26 @@ input[type='text'] {
   height: 40px;
   font-weight: bold;
 }
+
+#errorCity {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.footer {
+  background-color: #4aa1f3;
+  width: 100%;
+  height: 80px;
+  margin-top: 250px;
+  position: absolute;
+  bottom: 0;
+}
+
+#showWeather {
+  width: 60%;
+  margin: 0 auto;
+  background-color: #4aa1f3;
+  color: #FFFFFF;
+  border-radius: 25px;
+}
