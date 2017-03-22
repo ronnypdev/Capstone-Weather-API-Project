@@ -18,7 +18,7 @@
         <div class="container">
 
           <div class="navbar-header">
-            <a href="#" class="navbar-brand navbar-link weather">
+            <a href="index.html" class="navbar-brand navbar-link weather">
               <img src="images/logo.png" class="img-responsive" id="logo" alt="logo"><strong>Weather App</strong>
             </a>
             <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -34,6 +34,7 @@
                   <li><a href="current.html">Current</a></li>
                   <li><a href="forecast.html">Forecast</a></li>
                   <li><a href="https://openweathermap.org/" target="_blank">Open Weahter Map</a></li>
+                  <!-- ebd59d49fb2d486556929725dcc0deef -->
               </ul>
           </div>
 
@@ -41,20 +42,25 @@
 
       </nav>
 
+      <div class="jumbotron jumbo" style="margin-bottom: 0; background-color: #4aa1f3; color:#FFFFFF;">
+        <h2 class="text-center" style="font-size: 40px; font-weight: 600;">Get Current Weather Information</h2>
+      </div>
 
-      <section class="row" id="headRow">
-          <div class="col-md-12" id="colText">
-             <h2 class="text-center" id="colHeadText1">The most simplest weather app. It's simple</h2>
-             <h2 class="text-center" id="coldHeadText2">Get weather information of any city</h2>
+      <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+              <h3 class="text-center text-primary">Enter City Name</h3>
+            </div>
 
-             <ul class="list-inline" id="list_item">
-               <li>Temperature</li>
-               <li>Pressure</li>
-               <li>Windspeed</li>
-               <li>Humidity</li>
-             </ul>
-          </div>
-      </section>
+            <div class="row form-group form-inline"  id="cityDiv">
+                <input type="text" name="city" id="city" class="form-control" placeholder="Enter City Name">
+                <button id="submitCity" class="btn btn-primary">Search City</button>
+            </div>
+        </div>
+        <div id="error"></div>
+        <div id="showWeather"></div>
+      </div>
+
 
 
 
@@ -63,6 +69,7 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
   integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
   <script src="js/app.js" charset="utf-8"></script>
 </body>
 </html>
